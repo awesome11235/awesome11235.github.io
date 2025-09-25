@@ -1,7 +1,37 @@
 <!DOCTYPE html>
-<html>
+<head>
+    <title>JS Canvas Game</title>
+    <link rel="icon" href="./images/player.png">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+    <canvas></canvas>
+    <div class="scoreWrapper">
+        <span>Score: </span>
+        <span id="scoreCounter">0</span>
+    </div>
+    <div class="center">
+        <div class="startScreen" id="startScreen">
+            <h1 id="finalScoreDislplay">0</h1>
+            <p>Points</p>
+            <button id="startGameBtn">Start Game</button>
+        </div>
+    </div>
+    
+    <div class="assets">
+        <img src="./images/big-projectile.png" id="bigProjectile">
+        <img src="./images/enemy-ship.png" id="enemy-ship">
+        <img src="./images/player.png" id="player">
+        <img src="./images/projectile.png" id="projectile">
+        <img src="./images/snake-body.png" id="snakeBody">
+        <img src="./images/snake-head.png" id="snakeHead">
+
+        <!-- <audio src="./music/explosion-01.mp3" id="explosionSound1"></audio> -->
+    </div>
 </body>
-</html>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="./main.js" type="module"></script>
