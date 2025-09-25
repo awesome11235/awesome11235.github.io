@@ -3,9 +3,9 @@ import { Player } from "./scripts/player.js";
 import { Enemy, SnakeEnemy } from "./scripts/enemies.js";
 // import { Input } from "./scripts/input.js";
 
-let explosionSound = new Audio();
-explosionSound.src = "../music/explosion-01.mp3";
-explosionSound.addEventListener('playing', function() {
+// let explosionSound = new Audio();
+// explosionSound.src = "../music/explosion-01.mp3";
+// explosionSound.addEventListener('playing', function() {
     console.log("audio working?");
 });
 
@@ -180,7 +180,7 @@ function animate() {
                 enemy.x += projectile.velocity.x;
                 enemy.y += projectile.velocity.y
                 // Explosion
-                explosionSound.play();
+                // explosionSound.play();
                 const particleColor = `hsl(${Math.random()*30},100%,50%)`
                 for (let i=0; i<enemy.radius; i++) {
                     const particleAngle = Math.random()*2*Math.PI
