@@ -1,0 +1,78 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    user-select: none;
+    cursor: url('./images/crosshairs.png') 16 16, crosshair;
+    /* overflow: hidden; */
+}
+
+body {
+    display: flex;
+    background-color: black;
+    cursor: url('./images/crosshairs.png') 16 16, crosshair;
+    overflow: hidden;
+}
+.center {
+    width: 100%;
+    height: 100%;
+    place-items: center;
+    justify-content: center;
+}
+.scoreWrapper {
+    position: fixed;
+    color: white;
+    margin: 25px;
+    font-size: 25px;
+}
+
+.startScreen {
+	place-items: center;
+    position: fixed;
+    display: none;
+    background-color: white;
+    /* border-color: #007FFF; */
+    /* border-style: double; */
+    /* border-width: 1rem; */
+    width: 100%;
+	max-width: 500px;
+	max-height: 150px;
+    justify-content: center;
+    margin: auto;
+    inset: 0;
+    flex-direction: column;
+    padding: 50px;
+}
+
+button {
+    background-color: #007FFF;
+    border: none;
+    color: white;
+    width: 100%;
+    padding: 15px;
+    border-radius: 15px;
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 4rem;
+}
+
+p {
+    color: grey;
+    margin: 0px 0px 10px 0px;
+}
+
+canvas {
+    background-color: black;
+    left: -5%;
+    top: -5%;
+    height: 110%;
+    width: 110%;
+    position: absolute; 
+    overflow: hidden;
+    image-rendering: pixelated;
+}
+
+.assets {
+    display: none;
+}
