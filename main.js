@@ -6,8 +6,8 @@ import { Enemy, SnakeEnemy } from "./scripts/enemies.js";
 // let explosionSound = new Audio();
 // explosionSound.src = "../music/explosion-01.mp3";
 // explosionSound.addEventListener('playing', function() {
-    console.log("audio working?");
-});
+    // console.log("audio working?");
+// });
 
 
 const canvas = document.querySelector('canvas');
